@@ -14,6 +14,7 @@
 		049A35781AC8E4B90098958A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049A35771AC8E4B90098958A /* Images.xcassets */; };
 		049A357B1AC8E4B90098958A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049A35791AC8E4B90098958A /* LaunchScreen.xib */; };
 		049A35871AC8E4B90098958A /* _1wTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A35861AC8E4B90098958A /* _1wTests.m */; };
+		049A35A81AC91D9E0098958A /* CDPPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A35A71AC91D9E0098958A /* CDPPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		049A35801AC8E4B90098958A /* 11wTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 11wTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049A35851AC8E4B90098958A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049A35861AC8E4B90098958A /* _1wTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _1wTests.m; sourceTree = "<group>"; };
+		049A35A61AC91D9E0098958A /* CDPPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPPickerView.h; sourceTree = "<group>"; };
+		049A35A71AC91D9E0098958A /* CDPPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		049A355E1AC8E4B90098958A = {
 			isa = PBXGroup;
 			children = (
+				049A35A51AC91D9E0098958A /* CDPPickerView */,
 				049A35691AC8E4B90098958A /* 11w */,
 				049A35831AC8E4B90098958A /* 11wTests */,
 				049A35681AC8E4B90098958A /* Products */,
@@ -117,6 +121,15 @@
 				049A35851AC8E4B90098958A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		049A35A51AC91D9E0098958A /* CDPPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				049A35A61AC91D9E0098958A /* CDPPickerView.h */,
+				049A35A71AC91D9E0098958A /* CDPPickerView.m */,
+			);
+			path = CDPPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 049A35621AC8E4B90098958A /* Build configuration list for PBXProject "11w" */;
+			buildConfigurationList = 049A35621AC8E4B90098958A /* Build configuration list for PBXProject "CDPPickerView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,6 +234,7 @@
 			files = (
 				049A35731AC8E4B90098958A /* ViewController.m in Sources */,
 				049A35701AC8E4B90098958A /* AppDelegate.m in Sources */,
+				049A35A81AC91D9E0098958A /* CDPPickerView.m in Sources */,
 				049A356D1AC8E4B90098958A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = 11w/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = 11w/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		049A35621AC8E4B90098958A /* Build configuration list for PBXProject "11w" */ = {
+		049A35621AC8E4B90098958A /* Build configuration list for PBXProject "CDPPickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				049A35881AC8E4B90098958A /* Debug */,
@@ -412,6 +428,7 @@
 				049A358C1AC8E4B90098958A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049A358D1AC8E4B90098958A /* Build configuration list for PBXNativeTarget "11wTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				049A358F1AC8E4B90098958A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
