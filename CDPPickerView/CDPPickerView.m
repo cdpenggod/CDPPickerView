@@ -24,7 +24,7 @@
         _pickerView.backgroundColor=[UIColor whiteColor];
         [view addSubview:_pickerView];
         
-        _picker=[[UIPickerView alloc]initWithFrame:CGRectMake(0,view.bounds.size.height*0.07042,view.bounds.size.width,0)];
+        _picker=[[UIPickerView alloc]initWithFrame:CGRectMake(0,view.bounds.size.height*0.07042,view.bounds.size.width,_pickerView.bounds.size.height-view.bounds.size.height*0.07042)];
         _picker.backgroundColor=[UIColor clearColor];
         _picker.delegate=self;
         _picker.dataSource=self;
